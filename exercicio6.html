@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <h1>Cálculo de comissão de um funcionário</h1>
+    <div id="resultado"></div>
+    <script>
+        let nome = prompt("Digite o nome do funcionário")
+        let qtdvendaprod =Number(prompt("Digite o valor de produtos vendidos "))
+        let comissao = (qtdvendaprod * Number(1))
+        let resul
+
+         
+
+        if(qtdvendaprod <= 250 ){   
+            resul = "Nome Funcionário: " + nome + "<br>" + "Total Comissão: " + comissao + "R$"
+
+        }else if (qtdvendaprod > 250 && qtdvendaprod <= 499){
+            comissao = (qtdvendaprod * Number(1.50))
+            resul = "Nome Funcionário: " + nome + "<br>" + "Total Comissão: " + comissao + "R$"
+
+        }else if (qtdvendaprod >= 500 ){
+            comissao = (qtdvendaprod * Number(2))
+            resul = "Nome Funcionário: " + nome + "<br>" + "Total Comissão: " + comissao + "R$"
+        }
+        document.getElementById("resultado").innerHTML=resul
+    </script>
+
+    
+</body>
+</html>

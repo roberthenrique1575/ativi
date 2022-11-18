@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <h1>Notas e Calculo de média de um aluno</h1>
+    <div id="resultado"></div>
+    <div id="notass"></div>
+    <script>
+        let nome = prompt("Digite o nome do aluno")
+        let nota1 = Number(prompt("Digite a primeira nota"))
+        let nota2 = Number(prompt("Digite a segunda nota"))
+        let nota3 = Number(prompt("Digite a terceira nota"))
+        let media = ((nota1+nota2+nota3)/3)
+        let resul
+        let notas
+        
+        if(media>=6){
+            resul= "O aluno " + nome + " foi aprovado com média: " + media
+        }else{
+            resul= "O aluno" + nome + "foi reprovado com média:" + media
+        }
+        document.getElementById("resultado").innerHTML=resul 
+
+
+        if(nota1 >= nota2 && nota2 >= nota3){
+            notas ="Notas: " + "<br>" + nota1 + "<br>" + nota2 + "<br>" + nota3
+        }
+        else if(nota3 >= nota2 && nota2 >= nota1){
+            notas ="Notas: " + "<br>" + nota3 + "<br>" + nota2 + "<br>" + nota1
+        }
+        else if (nota2 >= nota1 && nota1 >= nota3){
+            notas ="Notas: " + "<br>" + nota2 + "<br>" + nota1 + "<br>" + nota3
+        }
+        else if (nota3 >= nota1 && nota1 >= nota2){
+            notas ="Notas: " + "<br>" + nota3 + "<br>" + nota1 + "<br>" + nota2
+        }
+        else if (nota1 >= nota3 && nota3 >= nota2){
+            notas ="Notas: " + "<br>" + nota1 + "<br>" + nota3 + "<br>" + nota2
+        }
+        else if (nota2 >= nota3 && nota3 >= nota1){
+            notas ="Notas: " + "<br>" + nota2 + "<br>" + nota3 + "<br>" + nota1
+        }
+        
+           
+        document.getElementById("notass").innerHTML=notas
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <h1>Exibição de nome e pesos em ordem decrescente</h1>
+    <div id="resultado"></div>
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa")
+        let peso1 = Number(prompt("Digite o peso da primeira pessoa"))
+        let nome2 = prompt("Digite o nome da segunda pessoa")
+        let peso2 = Number(prompt("Digite o peso da segunda pessoa"))
+        let nome3 = prompt("Digite o nome da terceira pessoa")
+        let peso3 = Number(prompt("Digite o peso da terceira pessoa"))
+        let resul
+
+        if(peso1 >= peso2 && peso2 >= peso3){
+            resul = "Nome: " + nome1 + " Peso: " + peso1 + "<br>" + "Nome: " + nome2 + " Peso: " + peso2 + "<br>" + "Nome: " + nome3 + " Peso: " + peso3
+        }
+        else if(peso3 >= peso2 && peso2 >= peso1){
+            resul = "Nome: " + nome3 + " Peso: " + peso3 + "<br>" + "Nome: " + nome2 + " Peso: " + peso2 + "<br>" + "Nome: " + nome1 + " Peso: " + peso1
+        }
+        else if(peso2 >= peso1 && peso1 >= peso3){
+            resul = "Nome: " + nome2 + " Peso: " + peso2 + "<br>" + "Nome: " + nome1 + " Peso: " + peso1 + "<br>" + "Nome: " + nome3 + " Peso: " + peso3
+        }
+        else if(peso3 >= peso1 && peso1 >= peso2){
+            resul = "Nome: " + nome3 + " Peso: " + peso3 + "<br>" + "Nome: " + nome1 + " Peso: " + peso1 + "<br>" + "Nome: " + nome2 + " Peso: " + peso2
+        }
+        else if(peso1 >= peso3 && peso3 >= peso2){
+            resul = "Nome: " + nome1 + " Peso: " + peso1 + "<br>" + "Nome: " + nome3 + " Peso: " + peso3 + "<br>" + "Nome: " + nome2 + " Peso: " + peso2
+        }
+        else if(peso2 >= peso3 && peso3 >= peso1){
+            resul = "Nome: " + nome2 + " Peso: " + peso2 + "<br>" + "Nome: " + nome3 + " Peso: " + peso3 + "<br>" + "Nome: " + nome1 + " Peso: " + peso1
+        }
+
+        
+            document.getElementById("resultado").innerHTML=resul
+    </script>
+    
+</body>
+</html>

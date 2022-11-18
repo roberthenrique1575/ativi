@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <h1>Exibição de data com mês por extenso</h1>
+    <div id="resultado"></div>
+    <script>
+        let dia = prompt("Digite o dia da data desejada")
+        let mes = Number(prompt("Digite o mês da data desejada(FORMATO: 01)"))
+        let ano = Number(prompt("Digite o ano da data desejada"))
+        let resul
+        let exibir;
+        
+        if(mes == 01){
+            resul= "Data:  " + dia + " de Janeiro " + ano
+
+        }else if( mes == 02 ){
+            resul= "Data:  " + dia + " de Fevereiro " + ano
+
+        }else if( mes == 03){
+            resul= "Data:  " + dia + " de Março " + ano
+
+        }else if( mes == 04){
+            resul= "Data:  " + dia + " de Abril " + ano
+
+        }else if( mes == 05){
+            resul= "Data:  " + dia + " de Maio " + ano
+
+        }else if( mes == 06){
+            resul= "Data:  " + dia + " de Junho " + ano
+
+        }else if( mes == 07){
+            resul= "Data:  " + dia + " de Julho " + ano
+        }
+        else if( mes == 08){
+            resul= "Data:  " + dia + " de Agosto " + ano
+        }
+        else if( mes == 09){
+            resul= "Data:  " + dia + " de Setembro " + ano
+        }
+        else if( mes == 10){
+            resul= "Data:  " + dia + " de Outubro " + ano
+        }
+        else if( mes == 11){
+            resul= "Data:  " + dia + " de Novembro " + ano
+        }
+        else if( mes == 12){
+            resul= "Data:  " + dia + " de Dezembro " + ano
+        }
+        document.getElementById("resultado").innerHTML = resul
+    </script>
+    
+</body>
+</html>

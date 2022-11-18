@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+    <div id="resultado"></div>
+    <script>
+        let pedido = Number(prompt ("Qual o número do pedido que deseja realizar"))
+        let resul
+
+        if (pedido == 1){
+            resul = "Lanche: Big Super Sanduba" + "<br>" + "Especificação: 2 Hambúrgueres, Queijo, Batata Frita e Refrigerante" + "<br>" + "Preço: 5,00R$" 
+        }
+        else if(pedido == 2){
+            resul = "Lanche: Quase Super Sanduba" + "<br>" + "Especificação: 1 Hambúrguer, Batata Frita, Refrigerante" + "<br>" + "Preço: 3,00R$"
+        }
+        else if(pedido == 3){
+            resul = "Lanche: Mirradus Sanduba" + "<br>" + "Especificação: 1 Misto Quente e Refrigerante" + "<br>" + "Preço: 1,50R$"
+        }
+        else{
+            resul = "Digite uma opção válida!(DO 1 AO 3)"
+        }
+        document.getElementById("resultado").innerHTML=resul
+    </script>
+    
+</body>
+</html>
